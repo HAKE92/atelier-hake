@@ -1,0 +1,607 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+     --creme: #F8F1E6;
+    --marine: #1F2B46;
+    --corail: #C8553D;
+    --or: #DDA542;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: var(--creme);
+    color: var(--marine);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 120px;
+}
+
+.marque {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--marine);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.header .marque {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 20px;
+}
+
+.header .marque img {
+    width: 190px;
+    height: 190px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: var(--marine);
+    font-weight: 500;
+}
+
+.bouton {
+    background: var(--corail);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 2px solid var(--corail);
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 48px;
+    height: 48px;
+    background: none;
+    border: 2px solid var(--marine);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--marine);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 90px 120px;
+}
+
+.hero-texte {
+    max-width: 640px;
+}
+
+.hero-visuel {
+    flex: 1;
+}
+
+.hero-visuel img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.etiquette {
+    display: inline-block;
+    background: var(--or);
+    color: var(--marine);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.accroche {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+
+.hero-boutons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.bouton--contour {
+    background: transparent;
+    color: var(--marine);
+    border: 2px solid var(--marine);
+}
+
+
+.offres {
+    padding: 80px 120px;
+    background: #fff;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.offres-intro,
+.etapes-intro,
+.exemples-intro {
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.cartes {
+    display: flex;
+    gap: 32px;
+}
+
+.carte {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--creme);
+    border: 1px solid #e6dac6;
+    border-radius: 24px;
+    padding: 36px;
+}
+
+.carte h3 {
+    font-size: 24px;
+}
+
+.prix {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--corail);
+}
+
+.prix span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--marine);
+}
+
+.carte ul {
+    padding-left: 20px;
+    line-height: 1.9;
+}
+
+.delai {
+    font-weight: 600;
+}
+
+.carte .bouton {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.etapes {
+    padding: 80px 120px;
+}
+
+.liste-etapes {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.etape {
+    flex: 1;
+}
+
+.etape-numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--marine);
+    color: var(--creme);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.etape h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.etape p {
+    line-height: 1.6;
+}
+
+.exemples {
+    padding: 80px 120px;
+    background: #fff;
+}
+
+.cartes-exemples {
+    display: flex;
+    gap: 32px;
+}
+
+.exemple {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--creme);
+    border: 1px solid #e6dac6;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.exemple img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.exemple-texte {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+    padding: 28px;
+}
+
+.exemple-texte h3 {
+    font-size: 22px;
+}
+
+.exemple-texte p {
+    line-height: 1.6;
+}
+
+.lien-exemple {
+    margin-top: auto;
+    color: var(--corail);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.lien-exemple:hover {
+    text-decoration: underline;
+}
+
+.apropos {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 80px 120px;
+}
+
+.apropos-texte {
+    max-width: 640px;
+}
+
+.apropos-texte p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.points-forts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.points-forts li {
+    font-weight: 600;
+}
+
+.points-forts li::before {
+    content: "✓";
+    color: var(--corail);
+    margin-right: 10px;
+}
+
+.contact {
+    background: var(--marine);
+    color: var(--creme);
+    text-align: center;
+    padding: 80px 120px;
+}
+
+.contact-intro {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 560px;
+    margin: 0 auto 36px;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.contact-tel {
+    color: var(--or);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-note {
+    margin-top: 24px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer {
+    background: var(--creme);
+    border-top: 1px solid #e6dac6;
+    padding: 40px 120px;
+}
+
+.footer-haut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer-liens {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-liens a {
+    text-decoration: none;
+    color: var(--marine);
+    font-weight: 500;
+}
+
+.footer-liens a:hover {
+    color: var(--corail);
+}
+
+.footer-bas {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.legal {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.legal a {
+    color: var(--corail);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.legal h1 {
+    font-size: 40px;
+    margin: 24px 0;
+}
+
+.legal h2 {
+    font-size: 22px;
+    margin-top: 32px;
+}
+
+.legal p {
+    line-height: 1.7;
+}
+
+
+@media (max-width: 900px) {
+    .header,
+    .hero,
+    .offres,
+    .etapes,
+    .exemples,
+    .apropos,
+    .contact,
+    .footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .cartes,
+    .cartes-exemples {
+        flex-direction: column;
+    }
+
+    .liste-etapes {
+        flex-wrap: wrap;
+    }
+
+    .etape {
+        flex: 1 1 40%;
+    }
+
+    .apropos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+        padding-top: 16px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .menu.ouvert {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+
+        .header .marque img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .header .marque {
+        font-size: 18px;
+    }
+   
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .accroche {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .liste-etapes {
+        flex-direction: column;
+    }
+
+    .etape {
+        flex: none;
+    }
+
+    .apropos-image img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-haut {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-liens {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
