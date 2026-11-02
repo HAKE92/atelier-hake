@@ -610,3 +610,161 @@ h2 {
     }
 }
 
+
+
+/* ===== Pages détaillées des offres ===== */
+.page-offre {
+    padding: 50px 120px 80px;
+}
+
+.retour {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: var(--marine);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.retour:hover {
+    color: var(--corail);
+}
+
+.po-haut {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.po-haut-texte,
+.po-haut-visuel {
+    flex: 1;
+}
+
+.po-haut h1 {
+    font-size: 42px;
+    margin: 0 0 18px;
+    color: var(--marine);
+}
+
+.po-haut-visuel img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(31, 43, 70, 0.18);
+}
+
+.po-bloc {
+    margin-top: 64px;
+}
+
+.po-bloc h2 {
+    font-size: 30px;
+    margin: 0 0 18px;
+}
+
+.po-deux {
+    display: flex;
+    gap: 48px;
+}
+
+.po-deux > div {
+    flex: 1;
+}
+
+.po-deux ul {
+    padding-left: 22px;
+    line-height: 1.9;
+}
+
+.po-grande-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(31, 43, 70, 0.18);
+}
+
+.po-legende {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.75;
+    margin-top: 12px;
+}
+
+.po-note {
+    background-color: white;
+    border-left: 5px solid var(--or);
+    border-radius: 10px;
+    padding: 22px 26px;
+}
+
+.po-note p {
+    margin: 0 0 10px;
+}
+
+.po-note p:last-child {
+    margin-bottom: 0;
+}
+
+.po-devis {
+    margin-top: 72px;
+    padding: 44px 24px;
+    background-color: var(--marine);
+    color: var(--creme);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.po-prix {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--or);
+    margin: 0;
+}
+
+.po-prix span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--creme);
+}
+
+.po-delai {
+    margin: 8px 0 22px;
+}
+
+.po-tel {
+    margin: 18px 0 0;
+    font-size: 15px;
+}
+
+.po-tel a {
+    color: var(--creme);
+}
+
+@media (max-width: 900px) {
+    .page-offre {
+        padding: 36px 24px 60px;
+    }
+
+    .po-haut,
+    .po-deux {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .po-haut h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-offre {
+        padding: 28px 16px 48px;
+    }
+
+    .po-bloc {
+        margin-top: 48px;
+    }
+}
