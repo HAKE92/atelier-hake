@@ -248,6 +248,11 @@ h2 {
     font-weight: 600;
 }
 
+.mention {
+    font-size: 14px;
+    opacity: 0.75;
+}
+
 .carte .bouton {
     align-self: flex-start;
     margin-top: auto;
